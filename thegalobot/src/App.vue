@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app v-bind:style="{ background: $vuetify.theme.themes.light.background}">
     <v-app-bar
       app
       color="primary"
