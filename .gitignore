@@ -1,23 +1,22 @@
 .DS_Store
-node_modules/
-.env
+node_modules
+#dist
 
-# IDE user config
-.vscode/
-.idea/
-.vs/
+# local env files
+.env.local
+.env.*.local
 
-# Logs
-yarn-error.log
-npm-debug.log
-lerna-debug.log
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Istanbul coverage
-coverage/
-
-# cypress
-cypress/screenshots
-cypress/videos
-
-.vercel
-.now
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
