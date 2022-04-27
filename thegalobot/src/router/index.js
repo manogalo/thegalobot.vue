@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import BotSettings from '../views/BotSettings.vue'
+import Login from '../views/Login.vue'
+import ControlPanel from '@/views/ControlPanel'
+import Forbidden from '@/views/Forbidden'
 
 Vue.use(VueRouter)
 
@@ -12,9 +14,19 @@ const routes = [
         component: Home
     },
     {
-        path: '/get-started',
-        name: 'Bot Settings',
-        component: BotSettings
+        path: '/list',
+        name: 'Painel de Controle',
+        component: ControlPanel
+    },
+    {
+        path: '/login',
+        name: 'Login',
+        component: Login
+    },
+    {
+        path:'/not-allowed',
+        name:'403 - Forbidden',
+        component: Forbidden
     }
 ]
 
