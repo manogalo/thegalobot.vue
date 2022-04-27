@@ -90,7 +90,6 @@
             </v-expansion-panel>
         </v-expansion-panels>
         <v-btn class="my-5 ma-2" dark @click="logout" >Logout</v-btn>
-        <v-btn class="my-5 ma-2" dark @click="teste" >Teste Snack</v-btn>
         <v-snackbar
             v-model="openSnackbar"
             :color="snackbar.color"

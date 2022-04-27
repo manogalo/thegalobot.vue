@@ -47,6 +47,7 @@ const actions = {
     async RemoveGuest({dispatch}, id) {
         await Http.delete(`user/${id}`)
         await dispatch('GetUserList')
+        await dispatch('GetGiftList')
     },
 
     async RemoveGift({dispatch}, id) {
