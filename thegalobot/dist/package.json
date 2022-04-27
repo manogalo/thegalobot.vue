@@ -1,0 +1,10 @@
+{
+    "name": "cha-bar-page",
+    "version": "1.0.0",
+    "description": "Página para confirmação de presença no chá bar",
+    "author": "Johnny Faria",
+    "private": true,
+    "scripts": {
+      "postinstall": "npm install express sqlite3 cors md5"
+    }
+}
