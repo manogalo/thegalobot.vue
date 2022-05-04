@@ -53,6 +53,7 @@ const actions = {
     async RemoveGift({dispatch}, id) {
         await Http.delete(`gifts/${id}`)
         await dispatch('GetGiftList')
+        await dispatch('GetUserList')
     },
 
     async AddGift({dispatch}, item) {

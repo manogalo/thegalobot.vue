@@ -34,7 +34,6 @@
                                     item-value="id"
                                     item-text="desc"
                                     label="Sugestão de presente"
-                                    :rules="rules"
                                 />
                             </v-row>
                             <v-row>
